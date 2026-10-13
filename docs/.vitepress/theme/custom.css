@@ -1,0 +1,11 @@
+:root {
+  --vp-c-brand-1: #3155ad;
+  --vp-c-brand-2: #456bc4;
+  --vp-c-brand-3: #5d80d0;
+}
+
+.dark {
+  --vp-c-brand-1: #8eaaff;
+  --vp-c-brand-2: #7596f0;
+  --vp-c-brand-3: #5d80d0;
+}

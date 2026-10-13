@@ -33,11 +33,22 @@ Mục tiêu là hiểu:
 ```text
 project-hub/
 ├── README.md
-├── docs/           # Tài liệu dự án
-├── experiments/    # Thiết kế và kết quả thí nghiệm
-├── src/            # Source code
-└── results/        # Metrics, biểu đồ và kết quả đánh giá
+├── package.json
+├── docs/
+│   ├── .vitepress/  # Cấu hình và giao diện
+│   ├── index.md     # Trang chủ
+│   ├── project/
+│   ├── discovery/
+│   ├── product/
+│   └── development/
+└── .github/workflows/deploy-docs.yml
 ```
+
+## Chạy tài liệu trên máy
+
+Yêu cầu Node.js 22 trở lên. Chạy `npm ci`, sau đó `npm run docs:dev` để xem trên máy hoặc `npm run docs:build` để kiểm tra bản build. `npm run docs:preview` cho phép xem bản đã build.
+
+Để đăng lên GitHub Pages, chọn **GitHub Actions** ở **Settings → Pages** rồi đưa thay đổi lên nhánh `main`. Workflow sẽ tự build và deploy site.
 
 ## Project Stages
 
